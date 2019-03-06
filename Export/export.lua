@@ -36,6 +36,7 @@ loadDat("ClientStrings")
 loadDat("GameConstants")
 loadDat("EffectivenessCostConstants")
 loadDat("CraftingItemClassCategories")
+loadDat("PantheonPanelLayout")
 
 while true do
 	print("Enter export script name:")
