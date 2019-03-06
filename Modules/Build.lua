@@ -1154,7 +1154,6 @@ function buildMode:CompareStatList(tooltip, statList, actor, baseOutput, compare
 				if nodeCount then
 					line = line .. string.format(" ^8[%+"..statData.fmt.."%s per point]", diff * ((statData.pc or statData.mod) and 100 or 1) / nodeCount, pcPerPt)
 				end
-				line = line .. string.format("^8 (= %".. statData.fmt ..")", statVal1)
 				tooltip:AddLine(14, line)
 				count = count + 1
 			end
