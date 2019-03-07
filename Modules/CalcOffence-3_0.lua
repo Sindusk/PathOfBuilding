@@ -234,22 +234,6 @@ function calcs.offence(env, actor, activeSkill)
 		end
 	end
 
-	if enemyDB:Sum("FLAG", nil, "Shock") then
-		local effect = calcLib.val(modDB, "EnemyShockEffect")
-		cappedEffect = m_floor(m_min(effect, 50))
-		output.ShockEffect = cappedEffect
-		enemyDB:NewMod("DamageTaken", "INC", cappedEffect, "Shock")
-		if breakdown then
-			breakdown.ShockEffect = { 
-				"Increased damage taken by enemy (Capped at 50%):",
-				s_format("%.0f%%", cappedEffect),
-			}
-			if (cappedEffect ~= effect) then
-			end
-		end
-	end
-		
-
 	local isAttack = skillFlags.attack
 
 	-- Calculate skill type stats
@@ -930,7 +914,7 @@ function calcs.offence(env, actor, activeSkill)
 			end
 		end
 
-		-- Calculate hit damage for each damage type --
+		-- Calculate hit damage for each damage type
 		local totalHitMin, totalHitMax = 0, 0
 		local totalCritMin, totalCritMax = 0, 0
 		local ghostReaver = skillModList:Flag(nil, "GhostReaver")
