@@ -2311,7 +2311,7 @@ return {
 		reqDex = 0,
 		reqInt = 40,
 	},
-	["Metadata/Items/Gems/SkillGemFlameTotem"] = {
+	["Metadata/Items/Gems/SkillGemHolyFlameTotem"] = {
 		name = "Holy Flame Totem",
 		grantedEffectId = "HolyFlameTotem",
 		tags = {
@@ -3284,7 +3284,7 @@ return {
 		reqDex = 0,
 		reqInt = 100,
 	},
-	["Metadata/Items/Gems/SkillGemGlacialCascade"] = {
+	["Metadata/Items/Gems/SkillGemPurifyingFlame"] = {
 		name = "Purifying Flame",
 		grantedEffectId = "PurifyingFlame",
 		tags = {
